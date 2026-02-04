@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #2563eb;
+  --color-primaryLight: #60a5fa;
+  --color-background: #0f172a;
+  --color-backgroundElevated: #1e293b;
+  --color-textPrimary: #f8fafc;
+  --color-textSecondary: #cbd5e1;
+  --color-textMuted: #64748b;
+  --color-accent: #ef4444;
+  --color-border: #334155;
+  --font-family-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-family-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+.prose {
+  @apply text-textPrimary leading-relaxed;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  @apply text-textPrimary font-semibold;
+}
+
+.prose p {
+  @apply text-textSecondary mb-4;
+}
+
+.prose a {
+  @apply text-primary hover:text-primaryLight underline;
+}
+
+.prose strong {
+  @apply text-textPrimary font-semibold;
+}
+
+.prose ul,
+.prose ol {
+  @apply text-textSecondary;
+}
+
+.prose code {
+  @apply bg-backgroundElevated text-textPrimary px-1 py-0.5 rounded text-sm font-mono;
+}
+
+.prose pre {
+  @apply bg-backgroundElevated border border-border rounded-lg p-4 overflow-x-auto;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-primary pl-4 italic text-textSecondary;
+}
